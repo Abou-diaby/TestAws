@@ -1,0 +1,91 @@
+
+<head>
+  <title>Formulaire Contact Responsive - Blueseodesign.com</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+  <div class="container">
+
+      <div class="row">
+
+          <div class="col-xl-8 offset-xl-2 py-5">
+            <img src="dist/img/logo simplon.svg" style="width: 24%;height: 24%;">
+              <h1 style="color: #ce0033;">Formulaire d'inscription pour la formation chez<a href="javascripti:void(0)">SIMPLON</a> 
+              </h1>
+
+              <p class="lead" >Voulez-vous améliorer vos compétences avec Simplon Côte d’Ivoire? Ne manquez pas cette chance, inscrivez-vous ici !</p>
+
+
+              <form id="contact-form" method="post" action="contact.php" role="form">
+                  <div class="messages"></div>
+
+                  <div class="controls">
+
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="form_name">Nom *</label>
+                                  <input id="form_name" type="text" name="nom" class="form-control" placeholder="Veuillez entrer votre nom *" required="required" data-error="Nom obligatoire.">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="form_lastname">Prénom *</label>
+                                  <input id="form_lastname" type="text" name="prenom" class="form-control" placeholder="Veuillez entre votre prénom *" required="required" data-error="Prénom obligatoire.">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="form_email">Email *</label>
+                                  <input id="form_email" type="email" name="email" class="form-control" placeholder="Veuillez entrer votre email *" required="required" data-error="Un email valide est obligatoire.">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+
+                          <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_tel">Téléphone *</label>
+                                <input id="form_tel" type="tel" name="tel" class="form-control" placeholder="Veuillez entrer votre Numero de téléphone *" required="required" data-error="Un Numero valide est obligatoire.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-12">
+                              <p class="text-muted">
+                                  <strong>*</strong> Ces champs sont obligatoires.</p>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-12">
+                              <input type="submit" name="insert" class="btn btn-success btn-send" value="Envoyer">
+                          </div>
+                      </div>
+                      
+                  </div>
+
+              </form>
+
+          </div>
+          <!-- /.8 -->
+
+      </div>
+      <!-- /.row-->
+
+  </div>
+  <!-- /.container-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" crossorigin="anonymous"></script>
+</body>
